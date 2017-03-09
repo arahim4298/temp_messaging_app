@@ -15,3 +15,22 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+//  $(document).ready(function() {
+// 		$(".user_list").click(function(){
+// 		    alert(this.attr('id'));
+// 		});
+// });
+
+
+ function button_onClick() {
+   //alert(arguments[0]);
+	  document.getElementById("receiver_id_hidden_field").value=arguments[0];
+	  document.getElementById("receiver_name").innerHTML=arguments[1];
+
+  }
+/*
+$(document).ready(function(){
+    $(".user_list").trigger("click");
+});*/
